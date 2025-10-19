@@ -54,7 +54,7 @@ Proje ana dizininde `.env` adında bir dosya oluşturun ve içine [Google AI Stu
 
 ```
 GOOGLE_API_KEY="AIzaSy...SİZİN-API-ANAHTARINIZ"
-GEMINI_MODEL="gemini-2.5-flash"
+GEMINI_MODEL="gemini-2.0-flash"
 ```
 
 ### 4\. Uygulamayı Başlatma
