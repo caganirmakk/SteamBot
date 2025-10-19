@@ -109,7 +109,7 @@ Bot açıldığında, aşağıdaki formata benzer bir soru sorabilirsiniz:
 
 > "Selam, sistemim Ryzen 7 5800X, ekran kartım RTX 4070 ve 32GB RAM var."
 > "Sence bu oyunu 1080p'de kaç FPS alırım?"
-> "httpsA://[store.steampowered.com/app/1086940/Baldurs\_Gate\_3/](https://store.steampowered.com/app/1086940/Baldurs_Gate_3/)"
+> "https://[store.steampowered.com/app/1086940/Baldurs\_Gate\_3/](https://store.steampowered.com/app/1086940/Baldurs_Gate_3/)"
 
 ```
 ```
