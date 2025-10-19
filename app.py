@@ -142,8 +142,8 @@ def extract_app_id(text: str):
 # Streamlit Uygulaması (Ana Mantık)
 # -------------------------------------------------------
 def main():
-    st.set_page_config(page_title="🎮 Gamer Chatbot", layout="centered")
-    st.title("🤖 Gamer Chatbot")
+    st.set_page_config(page_title="🎮 SteamBot", layout="centered")
+    st.title("🤖 SteamBot")
     st.caption("Steam verisi ve Gemini AI ile FPS tahmini yapalım!") 
 
     
@@ -229,4 +229,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
