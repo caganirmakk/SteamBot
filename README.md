@@ -1,5 +1,4 @@
-README.md
-Markdown
+
 
 # 🤖 SteamBot: Dinamik FPS Performans Asistanı
 
