@@ -74,7 +74,6 @@ cd SteamBot
 2. Gerekli Kütüphaneler
 Proje için gerekli Python kütüphanelerini yükleyin (Virtual environment kullanmanız önerilir):
 
-Bash
 
 pip install -r requirements.txt
 3. API Anahtarlarını Ayarlama
@@ -85,7 +84,6 @@ GEMINI_MODEL="gemini-2.0-flash"
 4. Uygulamayı Başlatma
 Streamlit uygulamasını yerel makinenizde başlatmak için:
 
-Bash
 
 streamlit run app.py
 🎯 Ürün Kılavuzu ve Sonuçlar
