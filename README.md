@@ -1,11 +1,14 @@
+README.md
+Markdown
 
-
-````markdown
 # 🤖 SteamBot: Dinamik FPS Performans Asistanı
 
-Bu proje, Akbank Generative AI Giriş Bootcamp için geliştirilmiş,
-**Google Gemini** modelini ve **Steam API**'sini kullanarak oyunlar için
-gerçek zamanlı FPS tahmini yapan bir chatbot projesidir.
+**[<-- UYGULAMAYI AÇMAK İÇİN BURAYA TIKLAYIN -->](https://huggingface.co/spaces/caganirmak/SteamBot)**
+
+Bu proje, **Google Gemini** modelini ve **Steam API**'sini kullanarak oyunlar için
+gerçek zamanlı FPS tahmini yapan Streamlit tabanlı bir chatbot'tur.
+
+---
 
 ## 📋 Proje Hakkında
 
@@ -20,20 +23,11 @@ mimarisi kurmaktır.
 Bu sayede, oyunların sistem gereksinimleri güncellendiği anda botun analizleri de
 otomatik olarak güncellenmiş olur.
 
-## 🛠️ Kullanılan Teknolojiler
+## 💡 Veri Seti ve Mimari (Nasıl Çalışır?)
 
-* **Streamlit**: Web arayüzü ve kullanıcı etkileşimi.
-* **Google Gemini (gemini-2.5-flash)**: Yanıt ve analiz üretimi (LLM).
-* **Requests**: Steam API'sinden anlık veri çekmek için.
-* **BeautifulSoup4**: Steam'den gelen HTML verisini temizlemek ve işlemek için.
-* **Python-dotenv**: API anahtarlarını güvenli bir şekilde saklamak için.
-
-## 💡 Veri Akışı ve Mimarisi (Nasıl Çalışır?)
-
-Bu proje, mentor (Rumeysa Bakar) tavsiyesi doğrultusunda
-**Steam API'sini dinamik bir veri seti** olarak kullanır. Statik bir
-vektör veritabanı yerine, her sorguda "Anlık Veri Çekme" (Real-time Retrieval)
-yöntemini uygular:
+Bu proje, **Steam API'sini dinamik bir veri seti** olarak kullanır.
+Statik bir vektör veritabanı yerine, her sorguda
+"Anlık Veri Çekme" (Real-time Retrieval) yöntemini uygular:
 
 1.  **Giriş (Input):**
     Kullanıcı, sistem özelliklerini (CPU, GPU, RAM) ve oyunun Steam mağaza
@@ -63,53 +57,45 @@ yöntemini uygular:
     elindeki *gerçek* verilere dayanarak kullanıcıya mantıklı bir FPS aralığı ve
     performans analizi sunar.
 
-7.  **Verimlilik:**
-    Steam API'sinden gelen yanıtlar `st.cache_data`, Gemini bağlantısı ise
-    `st.cache_resource` ile önbelleğe alınarak performans optimize edilir.
+## 🛠️ Kullanılan Teknolojiler
 
-## 🚀 Kurulum ve Çalıştırma
+* **Streamlit**: Web arayüzü.
+* **Google Gemini (gemini-2.5-flash)**: Yanıt ve analiz üretimi (Generation Model).
+* **Requests**: Steam API'sinden anlık veri çekmek için.
+* **BeautifulSoup4**: Veri işleme ve temizleme.
+* **Python-dotenv**: API anahtarlarını güvenli saklamak için.
+
+## 🚀 Çalıştırma Kılavuzu (Kurulum)
 
 ### 1. Depoyu Klonlama
 
 ```bash
-git clone https://github.com/caganirmakii/SteamBot.git
+git clone [https://github.com/caganirmakii/SteamBot.git](https://github.com/caganirmakii/SteamBot.git)
 cd SteamBot
-````
+2. Gerekli Kütüphaneler
+Proje için gerekli Python kütüphanelerini yükleyin (Virtual environment kullanmanız önerilir):
 
-### 2\. Gerekli Kütüphaneler
+Bash
 
-Proje için gerekli Python kütüphanelerini yükleyin:
-
-```bash
 pip install -r requirements.txt
-```
+3. API Anahtarlarını Ayarlama
+Proje ana dizininde .env adında bir dosya oluşturun ve içine Google AI Studio üzerinden aldığınız API anahtarınızı ekleyin.
 
-### 3\. API Anahtarlarını Ayarlama
-
-Proje ana dizininde `.env` adında bir dosya oluşturun ve içine
-[Google AI Studio](https://aistudio.google.com/app/apikey) üzerinden
-aldığınız API anahtarınızı ekleyin.
-
-```
 GOOGLE_API_KEY="AIzaSy...SİZİN-API-ANAHTARINIZ"
-GEMINI_MODEL="gemini-2.0-flash"
-```
-
-### 4\. Uygulamayı Başlatma
-
+GEMINI_MODEL="gemini-2.5-flash"
+4. Uygulamayı Başlatma
 Streamlit uygulamasını yerel makinenizde başlatmak için:
 
-```bash
+Bash
+
 streamlit run app.py
-```
+🎯 Ürün Kılavuzu ve Sonuçlar
+Deploy Linki: https://huggingface.co/spaces/caganirmak/SteamBot
 
-## 🎯 Örnek Kullanım
+Çalışma Akışı: Web arayüzü açıldığında, asistana sistem özelliklerinizi (CPU, GPU, RAM) ve analiz edilmesini istediğiniz oyunun Steam mağaza linkini vermeniz yeterlidir.
 
-Bot açıldığında, aşağıdaki formata benzer bir soru sorabilirsiniz:
+Sonuç: Bot, Steam API'sinden çektiği güncel verilere dayanarak size bir FPS tahmini ve performans analizi sunacaktır.
 
-> "Selam, sistemim Ryzen 7 5800X, ekran kartım RTX 4070 ve 32GB RAM var."
-> "Sence bu oyunu 1080p'de kaç FPS alırım?"
-> "https://[store.steampowered.com/app/1086940/Baldurs\_Gate\_3/](https://store.steampowered.com/app/1086940/Baldurs_Gate_3/)"
+Örnek Soru:
 
-```
-```
+"Selam, sistemim Ryzen 7 5800X, ekran kartım RTX 4070 ve 32GB RAM var." "Sence bu oyunu 1080p'de kaç FPS alırım?" "httpsA://https://www.google.com/search?q=store.steampowered.com/app/1086940/Baldurs_Gate_3/"
