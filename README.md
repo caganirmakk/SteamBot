@@ -81,7 +81,7 @@ pip install -r requirements.txt
 Proje ana dizininde .env adında bir dosya oluşturun ve içine Google AI Studio üzerinden aldığınız API anahtarınızı ekleyin.
 
 GOOGLE_API_KEY="AIzaSy...SİZİN-API-ANAHTARINIZ"
-GEMINI_MODEL="gemini-2.5-flash"
+GEMINI_MODEL="gemini-2.0-flash"
 4. Uygulamayı Başlatma
 Streamlit uygulamasını yerel makinenizde başlatmak için:
 
