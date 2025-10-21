@@ -69,7 +69,7 @@ Statik bir vektör veritabanı yerine, her sorguda
 ### 1. Depoyu Klonlama
 
 ```bash
-git clone https://github.com/caganirmakkk/SteamBot
+git clone https://github.com/caganirmakk/SteamBot
 cd SteamBot
 2. Gerekli Kütüphaneler
 Proje için gerekli Python kütüphanelerini yükleyin (Virtual environment kullanmanız önerilir):
