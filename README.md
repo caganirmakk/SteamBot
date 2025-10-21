@@ -69,7 +69,7 @@ Statik bir vektör veritabanı yerine, her sorguda
 ### 1. Depoyu Klonlama
 
 ```bash
-git clone [https://github.com/caganirmakii/SteamBot.git](https://github.com/caganirmakii/SteamBot.git)
+git clone [https://github.com/caganirmakkk/SteamBot]
 cd SteamBot
 2. Gerekli Kütüphaneler
 Proje için gerekli Python kütüphanelerini yükleyin (Virtual environment kullanmanız önerilir):
@@ -97,4 +97,4 @@ Sonuç: Bot, Steam API'sinden çektiği güncel verilere dayanarak size bir FPS 
 
 Örnek Soru:
 
-"Selam, sistemim Ryzen 7 5800X, ekran kartım RTX 4070 ve 32GB RAM var." "Sence bu oyunu 1080p'de kaç FPS alırım?" "httpsA://https://www.google.com/search?q=store.steampowered.com/app/1086940/Baldurs_Gate_3/"
+"Selam, sistemim Ryzen 7 5800X, ekran kartım RTX 4070 ve 32GB RAM var." "Sence bu oyunu 1080p'de kaç FPS alırım?" "https:///store.steampowered.com/app/1086940/Baldurs_Gate_3/"
