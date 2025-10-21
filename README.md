@@ -1,7 +1,3 @@
-
-
----
-
 ````markdown
 # 🎮 SteamBot: Dinamik FPS Performans Asistanı
 
@@ -133,11 +129,7 @@ F --> G[📈 FPS Tahmini ve Performans Yorumu]
 
 ---
 
----
+
 
 ```
-
----
-
-
 ```
