@@ -1,3 +1,8 @@
+
+
+---
+
+````markdown
 # 🎮 SteamBot: Dinamik FPS Performans Asistanı
 
 [![Open in Hugging Face Spaces](https://img.shields.io/badge/🚀%20Uygulamayı%20Aç-Click%20Here-blue?style=for-the-badge)](https://huggingface.co/spaces/caganirmak/SteamBot)
@@ -60,3 +65,79 @@ her zaman güncel sistem gereksinimlerini kullanır.
 ```bash
 git clone https://github.com/caganirmakk/SteamBot
 cd SteamBot
+````
+
+### 2️⃣ Gerekli Kütüphaneleri Yükle
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3️⃣ API Anahtarını Ayarla
+
+Proje dizinine `.env` dosyası oluştur ve içine şunu ekle:
+
+```bash
+GOOGLE_API_KEY="YOUR_GOOGLE_API_KEY"
+GEMINI_MODEL="gemini-2.0-flash"
+```
+
+### 4️⃣ Uygulamayı Başlat
+
+```bash
+streamlit run app.py
+```
+
+---
+
+## 💡 Kullanım Kılavuzu
+
+Uygulama açıldığında şu bilgileri girmen yeterli:
+
+* CPU, GPU ve RAM özelliklerin
+* Steam oyun linki
+  Örnek:
+
+  ```
+  https://store.steampowered.com/app/1086940/Baldurs_Gate_3/
+  ```
+
+### 🧠 Örnek Kullanım
+
+```
+Selam, sistemim Ryzen 7 5800X, ekran kartım RTX 4070 ve 32GB RAM var.
+Sence bu oyunu 1080p'de kaç FPS alırım?
+https://store.steampowered.com/app/1086940/Baldurs_Gate_3/
+```
+
+---
+
+## 🌐 Canlı Demo
+
+🎯 **Hemen Dene:**
+👉 [SteamBot - Hugging Face Spaces](https://huggingface.co/spaces/caganirmak/SteamBot)
+
+---
+
+## 📊 Çalışma Akışı
+
+```mermaid
+flowchart TD
+A[🔹 Kullanıcı Girdisi] --> B[🔍 App ID Çıkarımı]
+B --> C[🌐 Steam API'den Veri Çekme]
+C --> D[🧹 Gereksinimleri Temizleme]
+D --> E[⚙️ Bağlam Oluşturma (RAG)]
+E --> F[🤖 Gemini Analizi]
+F --> G[📈 FPS Tahmini ve Performans Yorumu]
+```
+
+---
+
+---
+
+```
+
+---
+
+
+```
