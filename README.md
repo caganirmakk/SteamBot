@@ -179,20 +179,6 @@ https://store.steampowered.com/app/1086940/Baldurs_Gate_3/
 
 ---
 
-## 📊 Çalışma Akışı
-
-```mermaid
-flowchart TD
-A[🔹 Kullanıcı Girdisi] --> B[🔍 App ID Çıkarımı]
-B --> C[🌐 Steam API'den Veri Çekme]
-C --> D[🧹 Gereksinimleri Temizleme]
-D --> E[⚙️ Bağlam Oluşturma (RAG)]
-E --> F[🤖 Gemini Analizi]
-F --> G[📈 FPS Tahmini ve Performans Yorumu]
-```
-
----
-
 
 
 ```
