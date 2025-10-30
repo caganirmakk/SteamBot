@@ -48,7 +48,7 @@ her zaman güncel sistem gereksinimlerini kullanır.
 | Teknoloji | Amaç |
 |------------|-------|
 | **Streamlit** | Web arayüzü oluşturma |
-| **Google Gemini (gemini-2.5-flash)** | FPS tahmini üretimi |
+| **Google Gemini (gemini-2.0-flash)** | FPS tahmini üretimi |
 | **Requests** | Steam API veri çekimi |
 | **BeautifulSoup4** | HTML verisini temizleme |
 | **Python-dotenv** | API anahtarlarını güvenli saklama |
@@ -112,7 +112,7 @@ her zaman güncel sistem gereksinimlerini kullanır.
 | Teknoloji | Amaç |
 |------------|-------|
 | **Streamlit** | Web arayüzü oluşturma |
-| **Google Gemini (gemini-2.5-flash)** | FPS tahmini üretimi |
+| **Google Gemini (gemini-2.0-flash)** | FPS tahmini üretimi |
 | **Requests** | Steam API veri çekimi |
 | **BeautifulSoup4** | HTML verisini temizleme |
 | **Python-dotenv** | API anahtarlarını güvenli saklama |
